@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.14.0] - 2026-11-26 (Fresha fork)
+- Sync with upstream v0.13.0: devise 5 support, Ruby 3.2–4 / Rails 8 CI
+- Keep fork settings: `valid_auds`, `default_scope`, `jwks_url`, `raw_header`
+- Test against the Fresha `warden-jwt_auth` fork (0.12.6)
+
+## [0.13.0] - 2026-01-13
+- Support devise 5.0
+
 ## [0.12.1] - 2024-07-12
 - Fix properly support for `token_header` & `issuer` config options
 

@@ -19,8 +19,8 @@ jobs:
     - name: Set up Ruby ${{ matrix.ruby-version }}
       uses: step-security/setup-ruby@37a6ba0604c7193dff21a6bfe974221525e0b2b8 # v1.321.0
       with:
-        ruby-version: 2.7 
+        ruby-version: 3.4
         bundler-cache: true # 'bundle install' and cache
-    - name: Run specs 
+    - name: Run specs
       run: |
         bundle exec rubocop
