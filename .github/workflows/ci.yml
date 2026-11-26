@@ -8,6 +8,8 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    # ruby-head breaks often (e.g. Bundler 2.6.7 vs Pathname); report, don't block
+    continue-on-error: ${{ matrix.ruby-version == 'ruby-head' }}
     strategy:
       matrix:
         ruby-version: ['3.2', '3.3', '3.4', ruby-head]
