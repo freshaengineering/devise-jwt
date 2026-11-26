@@ -253,4 +253,4 @@ DEPENDENCIES
   warden-jwt_auth!
 
 BUNDLED WITH
-   2.6.7
+  4.1.0
